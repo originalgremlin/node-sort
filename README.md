@@ -33,3 +33,5 @@ Tests:
     sorted, reverse sorted, 5 * random arrays
     of 10, 100, 1000 elements
     for each sort algorithm
+
+    utility methods: shuffle (using Fisher-Yates), isSorted

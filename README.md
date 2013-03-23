@@ -29,9 +29,5 @@ Planned:
     Merge insertion (Ford-Johnson) sort
     Smoothsort
 
-Tests:
-    sorted, reverse sorted, 5 * random arrays
-    of 10, 100, 1000 elements
-    for each sort algorithm
-
-    utility methods: shuffle (using Fisher-Yates), isSorted
+NOTE: removed SublimeCodeIntel on 23 mar 2013 to drop 100% cpu usage and sluggishness.  Did it work?
+alias mocha=`pwd`/node_modules/mocha/bin/mocha

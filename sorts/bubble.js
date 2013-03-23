@@ -6,24 +6,24 @@ module.exports = {
         best: 'n',
         worst: 'n^2',
         random: false,
-        stable: true
+        stable: true,
+        url: 'http://en.wikipedia.org/wiki/Bubble_sort'
     },
-    comparators: Sort.comparators,
+    compare: Sort.compare,
 
-    // http://en.wikipedia.org/wiki/Bubble_sort
-    sort: function (array, comparator) {
-        comparator = comparator || Sort.comparators.generic;
-
+    sort: function (array, compare) {
+        compare = compare || Sort.compare.byValue;
         var end = array.length;
         while (end > 0) {
             var lastSwapped = 0;
             for (var i = 1; i < end; i++) {
-                if (comparator(array[i - 1], array[i]) > 0) {
+                if (compare(array[i - 1], array[i]) > 0) {
                     Sort.swap(array, i - 1, i);
                     lastSwapped = i;
                 }
             }
             end = lastSwapped;
         }
+        return array;
     }
 };

@@ -7,9 +7,9 @@ http://en.wikipedia.org/wiki/Sorting_algorithm
 
 Implemented:
     Bubble sort
+    Selection sort
 
 In progress:
-    Selection sort
 
 Planned:
     Insertion sort
@@ -30,6 +30,7 @@ Planned:
     Cycle sort
     Merge insertion (Ford-Johnson) sort
     Smoothsort
+    Bingo sort
 
 http://visionmedia.github.com/mocha/
 http://brianstoner.com/blog/testing-in-nodejs-with-mocha/

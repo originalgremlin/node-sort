@@ -1,0 +1,8 @@
+- Write grep to only test some (e.g. the newest) sorting algorithms
+- Improve test suite:
+    http://visionmedia.github.com/mocha/
+    http://brianstoner.com/blog/testing-in-nodejs-with-mocha/
+    https://github.com/visionmedia/node-jscoverage
+    https://npmjs.org/doc/json.html
+- Complete test suite.
+- Make asynchronous version of all the sorts

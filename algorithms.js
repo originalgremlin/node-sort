@@ -1,0 +1,23 @@
+module.exports = {
+//    Bingo: require('./sorts/bingo'),
+    Bubble: require('./sorts/bubble'),
+//    Bucket: require('./sorts/bucket'),
+//    Cocktail: require('./sorts/cocktail'),
+//    Comb: require('./sorts/comb'),
+//    Counting: require('./sorts/counting'),
+//    Cycle: require('./sorts/cycle'),
+//    Distribution: require('./sorts/distribution'),
+//    Heap: require('./sorts/heap'),
+    Insertion: require('./sorts/insertion'),
+//    Intro: require('./sorts/intro'),
+//    Library: require('./sorts/library'),
+//    Merge: require('./sorts/merge'),
+//    MergeInsertion: require('./sorts/merge-insertion'),
+//    OddEven: require('./sorts/odd-even'),
+//    Quick: require('./sorts/quick'),
+//    Radix: require('./sorts/radix'),
+    Selection: require('./sorts/selection')
+//    Shell: require('./sorts/shell'),
+//    Smooth: require('./sorts/smooth'),
+//    Tim: require('./sorts/tim'),
+};

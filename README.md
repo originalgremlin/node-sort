@@ -8,31 +8,28 @@ http://en.wikipedia.org/wiki/Sorting_algorithm
 Implemented:
     Bubble sort
     Selection sort
+    Insertion sort
 
 In progress:
 
 Planned:
-    Insertion sort
-    Shell sort
-    Comb sort
-    Merge sort
-    Heapsort
-    Quicksort
-    Counting sort
-    Bucket sort
-    Radix sort
-    Distribution sort
-    Timsort
-    Library Sort
-    Intro sort
-    Odd-even sort
-    Cocktail sort
-    Cycle sort
-    Merge insertion (Ford-Johnson) sort
-    Smoothsort
+    Binary tree sort
     Bingo sort
-
-http://visionmedia.github.com/mocha/
-http://brianstoner.com/blog/testing-in-nodejs-with-mocha/
-https://github.com/visionmedia/node-jscoverage
-https://npmjs.org/doc/json.html
+    Bucket sort
+    Cocktail sort
+    Comb sort
+    Counting sort
+    Cycle sort
+    Distribution sort
+    Heapsort
+    Intro sort
+    Library Sort
+    List insertion sort (skip list?)
+    Merge insertion (Ford-Johnson) sort
+    Merge sort
+    Odd-even sort
+    Quicksort
+    Radix sort
+    Shell sort
+    Smoothsort
+    Timsort

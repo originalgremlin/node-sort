@@ -4,7 +4,8 @@ var assert = require('chai').assert,
 
 var algorithms = [
     ['Bubble Sort', require('../sorts/bubble')],
-    ['Selection Sort', require('../sorts/selection')]
+    ['Selection Sort', require('../sorts/selection')],
+    ['Insertion Sort', require('../sorts/insertion')]
 ];
 algorithms.forEach(function (algorithm) {
     var algo = algorithm[0],

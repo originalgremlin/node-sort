@@ -7,9 +7,11 @@ http://en.wikipedia.org/wiki/Sorting_algorithm
 
 Implemented:
     Bubble sort
+    Selection sort
+
+In progress:
 
 Planned:
-    Selection sort
     Insertion sort
     Shell sort
     Comb sort
@@ -28,8 +30,9 @@ Planned:
     Cycle sort
     Merge insertion (Ford-Johnson) sort
     Smoothsort
+    Bingo sort
 
-Tests:
-    sorted, reverse sorted, 5 * random arrays
-    of 10, 100, 1000 elements
-    for each sort algorithm
+http://visionmedia.github.com/mocha/
+http://brianstoner.com/blog/testing-in-nodejs-with-mocha/
+https://github.com/visionmedia/node-jscoverage
+https://npmjs.org/doc/json.html

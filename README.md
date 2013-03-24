@@ -8,8 +8,10 @@ http://en.wikipedia.org/wiki/Sorting_algorithm
 Implemented:
     Bubble sort
 
-Planned:
+In progress:
     Selection sort
+
+Planned:
     Insertion sort
     Shell sort
     Comb sort
@@ -29,5 +31,7 @@ Planned:
     Merge insertion (Ford-Johnson) sort
     Smoothsort
 
-NOTE: removed SublimeCodeIntel on 23 mar 2013 to drop 100% cpu usage and sluggishness.  Did it work?
-alias mocha=`pwd`/node_modules/mocha/bin/mocha
+http://visionmedia.github.com/mocha/
+http://brianstoner.com/blog/testing-in-nodejs-with-mocha/
+https://github.com/visionmedia/node-jscoverage
+https://npmjs.org/doc/json.html

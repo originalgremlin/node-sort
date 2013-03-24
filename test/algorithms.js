@@ -3,7 +3,8 @@ var assert = require('chai').assert,
     Sort = require('../sorts/_sort');
 
 var algorithms = [
-    ['Bubble Sort', require('../sorts/bubble')]
+    ['Bubble Sort', require('../sorts/bubble')],
+    ['Selection Sort', require('../sorts/selection')]
 ];
 algorithms.forEach(function (algorithm) {
     var algo = algorithm[0],
@@ -47,7 +48,7 @@ algorithms.forEach(function (algorithm) {
             });
         });
 
-        describe('algorithm', function () {
+        describe('#sort', function () {
             var dataTypes = [
                 ['integers', utils.createIntegerArray, Sort.compare.byValue],
                 ['floats', utils.createFloatArray, Sort.compare.byValue],
@@ -56,6 +57,12 @@ algorithms.forEach(function (algorithm) {
                 ['float-valued objects', utils.createFloatObjectArray, Sort.compare.byObjectValue],
                 ['string-valued objects', utils.createStringObjectArray, Sort.compare.byObjectValue]
             ];
+
+            it('should return an array', function () {
+                var a = klass.sort([1, 3, 5, 2, 4], Sort.compare.byValue);
+                assert.isArray(a);
+            });
+
             dataTypes.forEach(function (dataType) {
                 var name = dataType[0],
                     generate = dataType[1],

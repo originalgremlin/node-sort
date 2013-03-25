@@ -7,14 +7,18 @@ http://en.wikipedia.org/wiki/Sorting_algorithm
 
 Implemented:
     Bubble sort
-    Selection sort
     Insertion sort
+    Selection sort
+    Shell sort
 
 In progress:
+    Quicksort
 
 Planned:
     Binary tree sort
     Bingo sort
+    Bogosort
+    Bozosort
     Bucket sort
     Cocktail sort
     Comb sort
@@ -28,8 +32,6 @@ Planned:
     Merge insertion (Ford-Johnson) sort
     Merge sort
     Odd-even sort
-    Quicksort
     Radix sort
-    Shell sort
     Smoothsort
     Timsort

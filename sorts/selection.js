@@ -7,6 +7,7 @@ module.exports = {
         worst: 'n^2',
         random: false,
         stable: false,
+        memory: 'n',
         url: 'http://en.wikipedia.org/wiki/Selection_sort'
     },
     compare: Sort.compare,

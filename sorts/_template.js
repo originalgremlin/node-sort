@@ -7,6 +7,7 @@ module.exports = {
         worst: 'n',
         random: false,
         stable: false,
+        memory: 'n',
         url: ''
     },
     compare: Sort.compare,

@@ -14,10 +14,10 @@ module.exports = {
 //    Merge: require('./sorts/merge'),
 //    MergeInsertion: require('./sorts/merge-insertion'),
 //    OddEven: require('./sorts/odd-even'),
-//    Quick: require('./sorts/quick'),
+    Quick: require('./sorts/quick'),
 //    Radix: require('./sorts/radix'),
-    Selection: require('./sorts/selection')
-//    Shell: require('./sorts/shell'),
+    Selection: require('./sorts/selection'),
+    Shell: require('./sorts/shell')
 //    Smooth: require('./sorts/smooth'),
 //    Tim: require('./sorts/tim'),
 };

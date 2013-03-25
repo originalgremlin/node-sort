@@ -4,8 +4,10 @@ var assert = require('chai').assert,
 
 var algorithms = [
     ['Bubble Sort', require('../sorts/bubble')],
+    ['Insertion Sort', require('../sorts/insertion')],
+    ['Quick Sort', require('../sorts/quick')],
     ['Selection Sort', require('../sorts/selection')],
-    ['Insertion Sort', require('../sorts/insertion')]
+    ['Shell Sort', require('../sorts/shell')]
 ];
 algorithms.forEach(function (algorithm) {
     var algo = algorithm[0],
@@ -43,6 +45,11 @@ algorithms.forEach(function (algorithm) {
                 assert.isBoolean(klass.properties.stable);
             });
 
+            it('has memory', function () {
+                assert.deepProperty(klass, 'properties.memory');
+                assert.isString(klass.properties.memory);
+            });
+
             it('has url', function () {
                 assert.deepProperty(klass, 'properties.url');
                 assert.isString(klass.properties.url);
@@ -69,7 +76,7 @@ algorithms.forEach(function (algorithm) {
                     generate = dataType[1],
                     compare = dataType[2];
 
-                it('correctly sorts ' + name, function () {
+                it('correctly sorts in-order' + name, function () {
                     [10, 100, 1000].forEach(function (length) {
                         var arr = generate(length, false);
                         klass.sort(arr, compare);

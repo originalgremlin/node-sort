@@ -7,6 +7,7 @@ module.exports = {
         worst: 'n^2',
         random: false,
         stable: true,
+        memory: 'n',
         url: 'http://en.wikipedia.org/wiki/Insertion_sort'
     },
     compare: Sort.compare,

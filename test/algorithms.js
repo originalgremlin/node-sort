@@ -4,8 +4,9 @@ var assert = require('chai').assert,
 
 var algorithms = [
     ['Bubble Sort', require('../sorts/bubble')],
+    ['Comb Sort', require('../sorts/comb')],
     ['Insertion Sort', require('../sorts/insertion')],
-    ['Quick Sort', require('../sorts/quick')],
+//    ['Quick Sort', require('../sorts/quick')],
     ['Selection Sort', require('../sorts/selection')],
     ['Shell Sort', require('../sorts/shell')]
 ];
@@ -76,8 +77,8 @@ algorithms.forEach(function (algorithm) {
                     generate = dataType[1],
                     compare = dataType[2];
 
-                it('correctly sorts in-order' + name, function () {
-                    [10, 100, 1000].forEach(function (length) {
+                it('correctly sorts ordered ' + name, function () {
+                    [0, 1, 2, 10, 100, 1000].forEach(function (length) {
                         var arr = generate(length, false);
                         klass.sort(arr, compare);
                         assert(Sort.isSorted(arr, compare), JSON.stringify(arr));
@@ -85,7 +86,7 @@ algorithms.forEach(function (algorithm) {
                 });
 
                 it('correctly sorts reverse-ordered ' + name, function () {
-                    [10, 100, 1000].forEach(function (length) {
+                    [0, 1, 2, 10, 100, 1000].forEach(function (length) {
                         var arr = generate(length, false).reverse();
                         klass.sort(arr, compare);
                         assert(Sort.isSorted(arr, compare), JSON.stringify(arr));
@@ -93,7 +94,7 @@ algorithms.forEach(function (algorithm) {
                 });
 
                 it('correctly sorts shuffled ' + name, function () {
-                    [10, 100, 1000].forEach(function (length) {
+                    [0, 1, 2, 10, 100, 1000].forEach(function (length) {
                         var arr = generate(length, true);
                         klass.sort(arr, compare);
                         assert(Sort.isSorted(arr, compare), JSON.stringify(arr));

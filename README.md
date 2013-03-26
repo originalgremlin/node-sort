@@ -13,6 +13,7 @@ Implemented:
 
 In progress:
     Quicksort
+    Comb sort
 
 Planned:
     Binary tree sort
@@ -21,7 +22,6 @@ Planned:
     Bozosort
     Bucket sort
     Cocktail sort
-    Comb sort
     Counting sort
     Cycle sort
     Distribution sort

@@ -12,7 +12,7 @@ module.exports = {
     },
     compare: Sort.compare,
 
-    // Knuth sequence ((3^k - 1) / 2) by default
+    // Knuth sequence ((3^k - 1) / 2)
     gaps: [29524, 9841, 3280, 1093, 364, 121, 40, 13, 4, 1],
 
     sort: function (array, compare, gaps) {

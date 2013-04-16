@@ -3,12 +3,16 @@ var assert = require('chai').assert,
     Sort = require('../sorts/_sort');
 
 var algorithms = [
+    ['Bingo Sort', require('../sorts/bingo')],
+//    ['Bogo Sort', require('../sorts/bogo')], // WARNING: this will take a loooong time
+//    ['Bozo Sort', require('../sorts/bozo')], // WARNING: this will take a loooong time
     ['Bubble Sort', require('../sorts/bubble')],
     ['Comb Sort', require('../sorts/comb')],
     ['Insertion Sort', require('../sorts/insertion')],
 //    ['Quick Sort', require('../sorts/quick')],
     ['Selection Sort', require('../sorts/selection')],
     ['Shell Sort', require('../sorts/shell')]
+//    ['Stooge Sort', require('../sorts/stooge')] // WARNING: this will take a loooong time
 ];
 algorithms.forEach(function (algorithm) {
     var algo = algorithm[0],

@@ -14,8 +14,8 @@ module.exports = {
 
     sort: function (array, compare, left, right) {
         compare = compare || Sort.compare.byValue;
-        left = left || 0;
-        right = right || array.length - 1;
+        left = left === undefined ? 0 : left;
+        right = right === undefined ? array.length - 1 : right;
         // consider single-element arrays to be sorted
         if (right - left < 1)
             return array;
@@ -38,6 +38,3 @@ module.exports = {
         }
     }
 };
-
-[3, 4], [1, 2]
-1, 4, [3, 2]

@@ -47,8 +47,8 @@ module.exports = {
     sort: function (array, compare, left, right) {
         // defaults
         compare = compare || Sort.compare.byValue;
-        left = left || 0;
-        right = right || array.length - 1;
+        left = left === undefined ? 0 : left;
+        right = right === undefined ? array.length - 1 : right;
         // algorithm
         if (left < right) {
             // choose any pivotIndex such that left ≤ pivotIndex ≤ right

@@ -19,8 +19,8 @@ module.exports = {
             return array;
         // defaults
         compare = compare || Sort.compare.byValue;
-        left = left || 0;
-        right = right || length - 1;
+        left = left === undefined ? 0 : left;
+        right = right === undefined ? array.length - 1 : right;
         // counts
         var numElements = right - left + 1,
             third = Math.floor(numElements / 3);
